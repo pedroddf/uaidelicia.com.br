@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- 	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="language" content="pt">
     <title>Geladinho gourmet em Belo Horizonte é na UAI, DELÍCIA! (31) 99791-2263</title>
     <meta name="description" content="Geladinhos gourmet cremosos, artesanais e irresistíveis em Belo Horizonte. Sabores únicos feitos com ingredientes selecionados. Peça já o seu!">
     <meta name="robots" content="follow">
-    <meta name="author" content="@designer.pedrodias">
+    <meta name="author" content="Pedro Dias @designer.pedrodias">
     <meta name="keywords" content="geladinho gourmet em Belo Horizonte,  geladinho artesanal,  geladinho cremoso,  sabores de geladinho,  onde comprar geladinho gourmet BH,  sobremesa gelada artesanal,  geladinho diferente e gostoso,">
 
-    <meta property="og:type" content="page">
+	<meta property="og:type" content="page">
     <meta property="og:url" content="">
     <meta property="og:title" content="">
     <meta property="og:image" content="">
@@ -23,52 +24,605 @@
     <meta name="twitter:creator" content="@">
     <meta name="twitter:description" content="">
 
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-    <style type="text/css">
-    	body {
-			background-color: #0166B4;
-			color: #fff;
-			font-family: "Roboto", sans-serif;
-			font-optical-sizing: auto;
-			font-weight: 300;
-			font-style: normal;
-			font-variation-settings:
-				"wdth" 100;
-			text-align: center;
-			}
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-			#logo {
-				padding: 50px 25px;
-				position: absolute;
-				top: 50%;
-				left: 50%;
-				transform: translate(-50%, -50%);
-			}
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-			h2 {
-				font-weight: 300;
-			}
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-			img {
-				width: 350px;
-				max-width: 100%;
-				height: auto;
-			}
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 
-			a {
-				color: #fff;
-				text-decoration: none;
-			}
-    </style>
+    <!-- CSS Personal -->
+    <link href="css/uaidelicia.css" rel="stylesheet">
 </head>
+
 <body>
-	<div id="logo">
-		<img src="assets/images/uai-delicia-geladinhos-gourmet-belo-horizonte.png" alt="Uai, delícia! Geladinhos Gourmet & Tortinhas Geladas em Belo Horizonte">
-		<br />
-		<h2><strong>Trabalhe de casa!</strong><br />Seja nosso revendedor:<br /><a href="https://wa.link/ksmuov" target="_blank">(31) 99791-2263 (WhatsApp)</a></h2>
-	</div>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="text-primary m-0"><img src="" alt=""><img src="img/uaidelicia.png" alt=""></h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav mx-auto p-4 p-lg-0">
+                <a href="#inicio" class="nav-item nav-link" title="Início">Início</a>
+                <a href="#sobre" class="nav-item nav-link" title="Nossa história">Sobre</a>
+                <a href="#sabores" class="nav-item nav-link" title="Conheça nossas delícias">Sabores</a>
+                <a href="#peca-agora" class="nav-item nav-link" title="Peça agora!">Faça seu Pedido</a>
+                <a href="#onde-encontrar" class="nav-item nav-link" title="Veja onde tem Uai, delícia!">Onde encontrar?</a>
+                <a href="#revendedores" class="nav-item nav-link" title="Faça renda extra com nossos produtos">Seja um Revendedor</a>
+                <a href="#depoimentos" class="nav-item nav-link" title="Palavra de nossos clientes">Depoimentos</a>
+            </div>
+            <div class="d-none d-lg-flex box-revendedor">
+                <div class="flex-shrink-0 btn-lg-square border border-light rounded-circle" style="border-color: #fff2a4 !important;">
+                    <i class="fab fa-whatsapp text-primary"></i>
+                </div>
+                <div class="ps-3 box-revendedor">
+                    <small class="text-primary mb-0">Seja um Revendedor:</small>
+                    <p class="text-light fs-5 mb-0"><a href="https://wa.link/hyxp9g" target="_blank" title="Saiba agora como revender nossos produtos">(31) 99791-2263</a></p>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Menu -->
+
+
+    <!-- Banner -->
+    <div id="inicio" class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="owl-carousel header-carousel position-relative">
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-1.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8">
+                                <!-- <p class="text-primary text-uppercase fw-bold mb-2">// The Best Bakery</p> -->
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">Uai, delícia!</h1>
+                                <p class="text-light fs-5 mb-4 pb-3">Geladinhos Gourmet que são pura tentação.<br><strong>Peça agora e sinta o sabor da <strong>Uai, Delícia!</strong></strong></p>
+                                <a href="https://wa.link/7hcf6q" target="_blank" class="btn btn-primary rounded-pill py-3 px-5" title="Peça no iFood e receba no conforto de sua casa">Peça no iFood!</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="owl-carousel-item position-relative">
+                <img class="img-fluid" src="img/carousel-2.jpg" alt="">
+                <div class="owl-carousel-inner">
+                    <div class="container">
+                        <div class="row justify-content-start">
+                            <div class="col-lg-8">
+                                <!-- <p class="text-primary text-uppercase fw-bold mb-2">// The Best Bakery</p> -->
+                                <h1 class="display-1 text-light mb-4 animated slideInDown">Seja um revendedor!</h1>
+                                <p class="text-light fs-5 mb-4 pb-3">Faça uma renda extra vendendo nossos saborosos geladinhos</p>
+                                <a href="https://wa.link/hyxp9g" target="_blank" class="btn btn-primary rounded-pill py-3 px-5" title="Saiba agora como revender nossos produtos">Chamar no WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Banner -->
+
+
+    <!-- Facts Start -->
+    <!-- <div class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
+                        <p class="mb-2">Years Experience</p>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">50</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-users fa-4x text-primary mb-4"></i>
+                        <p class="mb-2">Skilled Professionals</p>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">175</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-bread-slice fa-4x text-primary mb-4"></i>
+                        <p class="mb-2">Total Products</p>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">135</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-cart-plus fa-4x text-primary mb-4"></i>
+                        <p class="mb-2">Order Everyday</p>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">9357</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Facts End -->
+
+
+    <!-- Sobre -->
+    <div id="sobre" class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row img-twice position-relative h-100">
+                        <div class="col-6">
+                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
+                        </div>
+                        <div class="col-6 align-self-end">
+                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <p class="text-primary text-uppercase mb-2">// Sobre</p>
+                        <h1 class="display-6 mb-4">Uai... Vem conhecer essa delícia!</h1>
+
+                        <!-- 
+                        
+                        "Conheça a Uai, Delícia!"
+
+                        "Da Vontade de Empreender ao Sabor que Surpreende!"
+
+                        "Geladinhos que Cabem no Bolso e Enchem de Alegria!"
+
+                        "Por Trás do Sabor: A História da Uai, Delícia!"
+
+                        "Sabor, Qualidade e Preço Justo: Esse é o Nosso Jeito!" 
+                        
+                        -->
+
+                        <p>A <strong>Uai, Delícia!</strong> nasceu da vontade de empreender e espalhar mais sabor e alegria por aí! Nossos geladinhos gourmet são feitos com produtos de qualidade e aquele toque especial que surpreende a cada mordida — e o melhor: com preços que cabem no bolso.</p>
+                        <p>Aqui, a gente acredita que todo mundo merece sentir esse “Uai… que delícia!” sem gastar muito. Prove e se surpreenda!</p>
+                        <div class="row g-2 mb-4">
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Produtos de qualidade
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Preço justo
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-2"></i>Geladinhos saborosos
+                            </div>
+                        </div>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="https://wa.link/7hcf6q" target="_blank" title="Peça agora e receba no conforto de sua casa">Fazer pedido!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sobre -->
+
+
+    <!-- Sabores -->
+    <div id="sabores" class="container-xxl bg-light py-6">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <p class="text-primary text-uppercase mb-2">// Sabores</p>
+                        <h1 class="display-6 mb-4">Escolha o sabor e diga você também: Uai, Delícia!</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <h2 class="mb-3">ChocoNinho</h2>
+                            <span>A cremosidade do leite ninho com um recheio generoso de brigadeiro artesanal</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/product-1.jpg" alt="ChocoNinho">
+                            <div class="product-overlay">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <h2 class="mb-3">Tentação</h2>
+                            <span>Creme sabor morango finalizado com uma casquinha crocante de chocolate ao leite</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/product-2.jpg" alt="Tentação">
+                            <div class="product-overlay">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <h2 class="mb-3">Cookies</h2>
+                            <span>Uma mistura perfeita de cremosidade com pedaços generosos de cookies crocantes</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/product-3.jpg" alt="Cookies">
+                            <div class="product-overlay">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <h2 class="mb-3">Mineirinho</h2>
+                            <span>A suavidade do leite combinada com a crocância e doçura irresistível da paçoca</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/product-4.jpg" alt="Mineirinho">
+                            <div class="product-overlay">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <h2 class="mb-3">Limão Nevado</h2>
+                            <span>Mousse de limão cremoso envolto por uma casquinha crocante de chocolate branco</span>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/product-5.jpg" alt="Limão Nevado">
+                            <div class="product-overlay">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="product-item d-flex flex-column bg-white rounded overflow-hidden h-100">
+                        <div class="text-center p-4">
+                            <h2 class="mb-3">Maracujito</h2>
+                            <span>Mousse de maracujá incrivelmente cremoso, finalizado com uma calda intensa da própria fruta</span>
+                        </div>
+                        <div id="peca-agora" class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/product-6.jpg" alt="Maracujito">
+                            <div class="product-overlay">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-primary text-light rounded p-5 my-6 mb-0 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-9">
+                            <h1 class="display-4 text-light mb-0">Peça agora e experimente essa delícia!</h1>
+                        </div>
+                        <div class="col-lg-3 text-lg-end">
+                            <a class="btn btn-primary rounded-pill py-3 px-5" href="https://wa.link/7hcf6q" target="_blank" title="Peça agora e receba no conforto de sua casa">Fazer pedido!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sabores -->
+
+    <!-- Onde encontrar -->
+    <div id="onde-encontrar" class="container-xxl py-6 pb-0">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <p class="text-primary text-uppercase mb-2">// Onde encontrar?</p>
+                        <h1 class="display-6 mb-4">Espalhamos sabor pela cidade: Descubra onde encontrar</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-container"  onclick="this.classList.add('clicked')" onmouseleave="this.classList.remove('clicked')"><iframe src="https://www.google.com/maps/d/embed?mid=1Vg9JXKn6n8dJO80RfegifiK9fovVNLg&ehbc=2E312F" width="640" height="480"></iframe></div>
+    <!-- Onde encontrar -->
+
+
+    <!-- Seja um revendedor -->
+    <div id="revendedores" class="container-xxl py-6">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="text-primary text-uppercase mb-2">// Seja um revendedor</p>
+                    <h1 class="display-6 mb-4">Revenda nossos geladinhos e diga:<br>Uai, que lucro!</h1>
+                    <!--
+                    
+                    "Seja um Revendedor e Espalhe Essa Delícia!"
+
+                    "Quer Lucrar? Vem Pro Time da Uai, Delícia!"
+
+                    "Ganhe Dinheiro Vendendo Nossas Delícias Geladas!"
+
+                    "Revenda e Faça Parte Dessa Delícia!"
+
+                    "Transforme Sabor em Renda: Seja um Revendedor!"
+
+                    "Junte-se a Nós e Leve a Uai, Delícia! Mais Longe!"
+
+                    "Revenda Geladinhos Gourmet e Diga: Uai, Que Lucro!" (mais brincalhão)
+                    
+                    -->
+                    <p>Já pensou em aumentar sua renda vendendo um produto que todo mundo ama?</p>
+                    <p>Com a <strong>Uai, Delícia!</strong>, você pode se tornar um revendedor oficial e começar agora mesmo — seja você aposentado, trabalha em home office, busca uma renda extra nos seus horários livres ou deseja revender no seu comércio e atrair ainda mais clientes!</p><br>
+                    <div class="row gy-5 gx-4">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                    <i class="fa fa-bread-slice text-white"></i>
+                                </div>
+                                <h5 class="mb-0">Aceitação</h5>
+                            </div>
+                            <span>Nossos geladinhos gourmet conquistam crianças e adultos.</span>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                    <i class="fa fa-birthday-cake text-white"></i>
+                                </div>
+                                <h5 class="mb-0">Lucro</h5>
+                            </div>
+                            <span>Revendedores oficiais ganham até 50% de lucro por unidade.</span>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                    <i class="fa fa-truck text-white"></i>
+                                </div>
+                                <h5 class="mb-0">Flexível</h5>
+                            </div>
+                            <span>Venda em comércios, na rua ou direto da sua casa com sua geladeira comum!</span>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="flex-shrink-0 btn-square bg-primary rounded-circle me-3">
+                                    <i class="fa fa-cart-plus text-white"></i>
+                                </div>
+                                <h5 class="mb-0">Baixo investimento</h5>
+                            </div>
+                            <span>Pedidos a partir de 50 unidades.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="row img-twice position-relative h-100">
+                        <div class="col-6">
+                            <img class="img-fluid rounded" src="img/service-1.jpg" alt="">
+                        </div>
+                        <div class="col-6 align-self-end">
+                            <img class="img-fluid rounded" src="img/service-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Seja um revendedor -->
+
+
+    <!-- Equipe -->
+    <div id="equipe" class="container-xxl py-6 pb-0">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// QUEM FAZ</p>
+                <h1 class="display-6 mb-4">Por trás de cada delícia, tem gente apaixonada</h1>
+            </div>
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Pedro</h5>
+                                <!-- <span>Designation</span> -->
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light rounded-circle" href="https://www.linkedin.com/in/pedroddf/" title="Perfil no LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a class="btn btn-square btn-light rounded-circle" href="https://www.instagram.com/designer.pedrodias" title="Perfil no Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item text-center rounded overflow-hidden">
+                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Cleidiane</h5>
+                                <!-- <span>Designation</span> -->
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-light rounded-circle" href="https://www.instagram.com/cleidianecsantos" title="Perfil no Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Equipe -->
+
+
+    <!-- Depoimentos -->
+    <div id="depoimentos" class="container-xxl bg-light my-6 py-6 mb-0">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">// Depoimentos</p>
+                <h1 class="display-6 mb-4">Deixe quem já provou te convencer</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item bg-white rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-1.jpg" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Maria</h5>
+                            <span></span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Textura cremosa e sabor marcante. A cada dia quero provar um novo!</p>
+                </div>
+                <div class="testimonial-item bg-white rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-2.jpg" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Claudio</h5>
+                            <span></span>
+                        </div>
+                    </div>
+                    <p class="mb-0">É tão gostoso que dá vontade de comer mais um na hora. Viciante!</p>
+                </div>
+                <div class="testimonial-item bg-white rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-3.jpg" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Fabiano</h5>
+                            <span></span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Preço justo e qualidade top! Não consigo mais ficar sem o meu geladinho favorito.</p>
+                </div>
+                <div class="testimonial-item bg-white rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/testimonial-4.jpg" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Angelita</h5>
+                            <span></span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Sabor incrível e super cremoso! Já quero experimentar todos os sabores!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Depoimentos -->
+
+
+    <!-- Footer -->
+    <div id="rodape" class="container-fluid bg-dark text-light footer mb-0 py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Renda Extra</h4>
+                    <p class="mb-2">Revenda nossos produtos e tenha uma renda extra!</p>
+                    <p class="text-light fs-5"><a href="https://wa.link/hyxp9g" target="_blank" title="Saiba agora como revender nossos produtos"><strong>(31) 99791-2263</strong></a></p>
+                    <!-- <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-light rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Acesse</h4>
+                    <a class="btn btn-link" href="#inicio">Início</a>
+                    <a class="btn btn-link" href="#sobre">Sobre</a>
+                    <a class="btn btn-link" href="#sabores">Sabores</a>
+                    <a class="btn btn-link" href="#peca-agora">Faça seu Pedido</a>
+                    <a class="btn btn-link" href="#onde-encontrar">Onde encontrar?</a>
+                    <a class="btn btn-link" href="#revendedores">Seja um Revendedor</a>
+                    <a class="btn btn-link" href="#depoimentos">Depoimentos</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <!-- <h4 class="text-light mb-4">Quick Links</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a> -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-light mb-4">Instagram</h4>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <a href="https://instagram.com/uaidelicia.oficial" target="_blank" title="Acesse nosso Instagram e fique por dentro de novidades"><img class="img-fluid bg-light rounded p-1" src="img/insta-1.jpg" alt="Image"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="https://instagram.com/uaidelicia.oficial" target="_blank" title="Acesse nosso Instagram e fique por dentro de novidades"><img class="img-fluid bg-light rounded p-1" src="img/insta-2.jpg" alt="Image"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="https://instagram.com/uaidelicia.oficial" target="_blank" title="Acesse nosso Instagram e fique por dentro de novidades"><img class="img-fluid bg-light rounded p-1" src="img/insta-3.jpg" alt="Image"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="https://instagram.com/uaidelicia.oficial" target="_blank" title="Acesse nosso Instagram e fique por dentro de novidades"><img class="img-fluid bg-light rounded p-1" src="img/insta-4.jpg" alt="Image"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="https://instagram.com/uaidelicia.oficial" target="_blank" title="Acesse nosso Instagram e fique por dentro de novidades"><img class="img-fluid bg-light rounded p-1" src="img/insta-5.jpg" alt="Image"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="https://instagram.com/uaidelicia.oficial" target="_blank" title="Acesse nosso Instagram e fique por dentro de novidades"><img class="img-fluid bg-light rounded p-1" src="img/insta-6.jpg" alt="Image"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+
+
+    <!-- Copyright Start -->
+    <div id="copy" class="container-fluid copyright text-light py-4 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <span>&copy; <strong>Uai, delícia! 2025</strong></span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://www.pedrodias.com.br" target="_blank"><img src="img/designer.pedrodias.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
 </body>
+
 </html>
